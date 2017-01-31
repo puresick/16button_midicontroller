@@ -40,11 +40,11 @@ void loop() {
           digitalInputState[i] = tempDigitalInput;
 
         if (digitalInputState[i] == 0) {
-          midiNoteOn(MIDI_CHANNEL, NOTE + noteOffset, 0x7F);  
-          Serial.println("noteOn");
+          midiNoteOn(MIDI_CHANNEL, NOTE + noteOffset, 0x7F);
+          // Serial.println("noteOn");
         } else {
-          midiNoteOff(MIDI_CHANNEL, NOTE + noteOffset);  
-          Serial.println("noteOff");
+          midiNoteOff(MIDI_CHANNEL, NOTE + noteOffset);
+          // Serial.println("noteOff");
         }  
       }  
     }
